@@ -1,2 +1,130 @@
-<link rel="stylesheet" href="/static/style.css">
-<script src="/static/script.js"></script>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>홍보 포트폴리오</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">Portfolio</div>
+      <ul class="nav-menu">
+        <li><a href="#about">소개</a></li>
+        <li><a href="#projects">프로젝트</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <p class="tag">PR / Marketing Portfolio</p>
+      <h1>
+        브랜드의 메시지를 <br>
+        더 효과적으로 전달하는 <span>홍보 기획 포트폴리오</span>
+      </h1>
+      <p class="hero-desc">
+        콘텐츠 기획, 캠페인 운영, 성과 분석까지 연결하는
+        홍보 직무 중심의 포트폴리오입니다.
+      </p>
+      <a href="#projects" class="btn">프로젝트 보기</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="section-title">
+        <h2>소개</h2>
+        <p>간단한 자기소개와 핵심 역량</p>
+      </div>
+
+      <div class="about-box">
+        <p>
+          안녕하세요. 저는 브랜드와 콘텐츠가 더 많은 사람들에게 닿을 수 있도록
+          메시지를 기획하고 실행하는 데 관심이 있습니다.
+          문제를 파악하고, 타깃에 맞는 콘텐츠와 홍보 전략을 설계하는 과정을 좋아합니다.
+        </p>
+
+        <div class="skills">
+          <span>콘텐츠 기획</span>
+          <span>SNS 운영</span>
+          <span>캠페인 기획</span>
+          <span>카피라이팅</span>
+          <span>성과 분석</span>
+          <span>협업</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section gray">
+      <div class="section-title">
+        <h2>프로젝트</h2>
+        <p>간단한 프로젝트 예시</p>
+      </div>
+
+      <div class="card-list">
+        <article class="card">
+          <h3>브랜드 SNS 콘텐츠 기획</h3>
+          <p class="period">2024.03 - 2024.05</p>
+          <p>
+            타깃 맞춤형 콘텐츠를 기획하고 게시물 흐름을 정리해
+            브랜드 메시지 전달력을 높인 프로젝트입니다.
+          </p>
+          <ul>
+            <li>역할: 콘텐츠 기획 / 카피 작성</li>
+            <li>핵심: 카드뉴스 시리즈 기획</li>
+            <li>성과: 반응률 및 저장 수 향상</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>행사 홍보 캠페인 운영</h3>
+          <p class="period">2024.06 - 2024.07</p>
+          <p>
+            행사 참여를 유도하기 위해 SNS 홍보 문구와 홍보 포인트를 정리하고
+            게시 일정을 운영한 프로젝트입니다.
+          </p>
+          <ul>
+            <li>역할: 홍보 메시지 기획 / 일정 운영</li>
+            <li>핵심: 참여 유도형 콘텐츠 구성</li>
+            <li>성과: 행사 관심도 및 참여 문의 증가</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>브랜드 소개 페이지 개선</h3>
+          <p class="period">2024.08</p>
+          <p>
+            브랜드 소개 문구와 정보 구조를 정리해
+            더 읽기 쉽고 신뢰감 있는 페이지로 개선한 작업입니다.
+          </p>
+          <ul>
+            <li>역할: 문구 정리 / 정보 구조 개선</li>
+            <li>핵심: 핵심 메시지 강조</li>
+            <li>성과: 전달력 향상</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-title">
+        <h2>연락처</h2>
+        <p>문의 및 협업</p>
+      </div>
+
+      <div class="contact-box">
+        <p><strong>Email</strong> : your-email@example.com</p>
+        <p><strong>GitHub</strong> : github.com/your-id</p>
+        <p><strong>Message</strong> : 포트폴리오 관련 문의를 환영합니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 PR Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
